@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M.G. Janani | Mobile App Developer</title>
+  <style>
+    /* Global Dark Theme */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b0f1a;
+      color: #f5f5f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+      color: #00e5ff;
+    }
+
+    /* Header */
+    header {
+      background: #111827;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 22px;
+      color: #ff4ecd;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a:hover {
+      color: #ff4ecd;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .hero img {
+      width: 280px;
+      border-radius: 50%;
+      border: 4px solid #ff4ecd;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #ff4ecd;
+    }
+
+    /* About Me */
+    .about {
+      background: #1a1f2e;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .skills-list span {
+      background: #111827;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: #fff;
+      border: 1px solid #00e5ff;
+      transition: 0.3s;
+    }
+    .skills-list span:hover {
+      background: #00e5ff;
+      color: #000;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      background: #1f2937;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      background: #1a1f2e;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* Achievements */
+    .achievements {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    /* Blog */
+    .blogs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .blog-card {
+      background: #111827;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    /* Contact */
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    .contact button {
+      background: #ff4ecd;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #00e5ff;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>M.G. Janani</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#blogs">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm <span style="color:#00e5ff;">M.G. Janani</span></h2>
+      <p>A passionate <b>Mobile App Developer</b> specializing in creating intuitive, dynamic and engaging mobile applications with modern technologies.</p>
+      <a href="#contact"><button>Hire Me</button></a>
+    </div>
+    <img src="profile.jpg" alt="M.G. Janani Profile">
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated Mobile App Developer with experience in building user-friendly applications. My focus lies in clean code, scalable architecture, and interactive designs. With strong expertise in both frontend and backend technologies, I create mobile apps that solve real-world problems effectively.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Tech Stack & Skills</h2>
+    <div class="skills-list">
+      <span>C++</span>
+      <span>Python</span>
+      <span>DSA</span>
+      <span>PHP</span>
+      <span>HTML</span>
+      <span>CSS</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Mobile app for task management with offline sync.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>E-commerce mobile application with secure payment integration.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Healthcare app with real-time doctor consultation feature.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>Testimonials & Client Feedback</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Janani’s apps are seamless and user-friendly. Highly recommend working with her!"</p>
+        <small>- Client A</small>
+      </div>
+      <div class="testimonial">
+        <p>"A highly skilled developer who always delivers on time."</p>
+        <small>- Client B</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Achievements & Certifications</h2>
+    <ul class="achievements">
+      <li>Certified Mobile App Developer – Google</li>
+      <li>Best Project Award – Mobile Hackathon 2024</li>
+      <li>Completed 50+ freelance projects</li>
+    </ul>
+  </section>
+
+  <!-- Blog -->
+  <section id="blogs">
+    <h2>Blog & Insights</h2>
+    <div class="blogs">
+      <div class="blog-card">
+        <h3>How to Build Scalable Mobile Apps</h3>
+        <p>Insights into clean architecture and modular coding.</p>
+      </div>
+      <div class="blog-card">
+        <h3>Top 5 Mobile App Development Trends</h3>
+        <p>Discussing AI, AR/VR, and cross-platform development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 M.G. Janani | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
